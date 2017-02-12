@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="记录生活点滴"><title>搭建个人博客 | Daymale的小窝</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">搭建个人博客</h1><a id="logo" href="/.">Daymale的小窝</a><p class="description">一天进步一点</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">搭建个人博客</h1><div class="post-meta">Feb 11, 2017<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><div class="post-content"><h2 id="免费搭建个人博客-hexo-github"><a href="#免费搭建个人博客-hexo-github" class="headerlink" title="免费搭建个人博客-hexo+github"></a>免费搭建个人博客-hexo+github</h2><p>使用hexo生成静态博客并架设在免费的github page平台</p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>系统</p>
+<ul>
+<li>window 10 64位</li>
+</ul>
+<p>使用软件 </p>
+<ul>
+<li>Git v2.11.164位 下载地址：<a href="http://pan.baidu.com/disk/home#list/vmode=list&amp;path=/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/Git" target="_blank" rel="external">百度云</a></li>
+<li>Node.js v6.9.5 64位 下载地址：<a href="http://pan.baidu.com/disk/home#list/vmode=list&amp;path=/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/Node.js" target="_blank" rel="external">百度云</a></li>
+</ul>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ul>
+<li><p>大部分都默认安装，一路点击”Next”</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701001.png" alt="image"></p>
+</li>
+<li><p>这里选择对应的windows选项</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701006.png" alt="image"></p>
+</li>
+<li><p>等待安装完成</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701008.png" alt="image"></p>
+</li>
+</ul>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><ul>
+<li><p>Node.js安装更加简单，还是一路”Next”,最后等待安装完成即可</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701010.png" alt="image"><br>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701015.png" alt="image"></p>
+<h3 id="验证软件正确安装"><a href="#验证软件正确安装" class="headerlink" title="验证软件正确安装"></a>验证软件正确安装</h3></li>
+<li><p>点击开始菜单&gt;运行，输入”cmd”</p>
+<p>然后输入以下命令，结果与下图相同则说明安装正确，若不正确可卸载从新安装</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span>.  git --<span class="keyword">version</span></div><div class="line"><span class="number">2</span>.  <span class="keyword">node</span> <span class="title">-v</span></div><div class="line"><span class="number">3</span>.  npm -v</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701016.png" alt="image"></p>
+<hr>
+<h3 id="申请GitHub账号"><a href="#申请GitHub账号" class="headerlink" title="申请GitHub账号"></a>申请GitHub账号</h3><ul>
+<li>点击 <a href="https://github.com/" target="_blank" rel="external">GitHub</a>进入官网注册账号</li>
+<li><p>分别输入用户名、邮箱、密码，点击注册</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701017.png" alt="image"></p>
+</li>
+<li><p>按默认设置，点击”Finish sign up”  </p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701018.png" alt="image"> </p>
+</li>
+<li><p>点击”New repositorys”,新建一个版本库</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701019.png" alt="image"></p>
+</li>
+<li><p>输入Repository name:++Daymale.github.io++</p>
+<p>  (Daymale与你注册的用户名一致，这个就是你博客的域名了)</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701020.png" alt="image"></p>
+<p>  GitHub账号申请完成</p>
+</li>
+<li><p>启用GitHub page </p>
+<p>  点击右边的”Setting”菜单进入设置，点击”Launch  antomatic page generator”</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-1.png" alt="image"></p>
+<p>  点击底部的”Continue to layouts”</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-2.png" alt="image"></p>
+<p>  最后点击”Publish page”,发布GitHub默认生成的一个静态站点</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701021-3.png" alt="image"></p>
+</li>
+</ul>
+<hr>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>hexo是基于node.js的静态博客，官网也是搭建在GitHub上</p>
+<ul>
+<li>在电脑上新建一个blog文件夹，该文件加用于存放你的博客文件</li>
+<li><p>然后右键单击选择”Git Bash”</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701022.png" alt="image"></p>
+</li>
+<li>大家估计都有被”墙”的经历，安装hexo为了避免出现类似情况，我使用<a href="https://npm.taobao.org/" target="_blank" rel="external">淘宝NPM镜像</a>，输入以下命令等待安装完成</li>
+</ul>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">npm</span> install -g cnpm --registry=https:<span class="regexp">//</span>registry.<span class="built_in">npm</span>.taobao.org</div></pre></td></tr></table></figure>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701023.png" alt="image"></p>
+<ul>
+<li>也可使用淘宝NPM安装Hexo</li>
+</ul>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm install -g hexo-<span class="keyword">cli</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>与原先的npm完全一样，只是命令改为cnpm，都可以用，一样等待hexo安装完成</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701024.png" alt="image"></p>
+<p>  出现的WARN可以不用理会</p>
+<p>  继续输入以下命令</p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm <span class="keyword">install</span> hexo <span class="comment">--save</span></div></pre></td></tr></table></figure>
+<p>  安装完成后，在输入命令，验证是否安装正确</p>
+  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo -v</div></pre></td></tr></table></figure>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701025.png" alt="image"></p>
+</li>
+</ul>
+<h3 id="本地运行Hexo"><a href="#本地运行Hexo" class="headerlink" title="本地运行Hexo"></a>本地运行Hexo</h3><ul>
+<li><p>初始化hexo</p>
+  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo init</div></pre></td></tr></table></figure>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701026.png" alt="image"></p>
+</li>
+<li><p>安装生成器</p>
+</li>
+</ul>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm <span class="keyword">install</span></div></pre></td></tr></table></figure>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701027.png" alt="image"></p>
+<ul>
+<li>运行hexo，以后要在本地运行博客值有输入以下命令即可<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo s -g</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701028.png" alt="image"></p>
+<p>打开浏览器，输入Localhost:4000,就可以在本地看到你的个人博客了<br><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701029.png" alt="image"></p>
+<ul>
+<li><p>停止运行</p>
+<p>  按住Ctrl+C即可停止</p>
+</li>
+</ul>
+<hr>
+<h3 id="管理博客"><a href="#管理博客" class="headerlink" title="管理博客"></a>管理博客</h3><ul>
+<li><p>配置信息</p>
+<p>  使用<a href="http://pan.baidu.com/disk/home#list/vmode=list&amp;path=%2F%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2FSubline(%E7%BB%BF%E8%89%B2%E7%89%88%E6%97%A0%E9%A1%BB%E5%AE%89%E8%A3%85" target="_blank" rel="external">Subline_Text</a>)编辑器(绿色软件无须安装，解压即可使用)，打开blog/_config.yml文件，进行配置</p>
+<p>  <img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701030.png" alt="image"></p>
+</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#博客名称</span></div><div class="line"><span class="attr">title:</span> 我的博客</div><div class="line"><span class="comment">#副标题</span></div><div class="line"><span class="attr">subtitle:</span> 一天进步一点</div><div class="line"><span class="comment">#简介</span></div><div class="line"><span class="attr">description:</span> 记录生活点滴</div><div class="line"><span class="comment">#博客作者</span></div><div class="line"><span class="attr">author:</span> John Doe</div><div class="line"><span class="comment">#博客语言</span></div><div class="line"><span class="attr">language:</span> zh-CN</div><div class="line"><span class="comment">#时区</span></div><div class="line"><span class="attr">timezone:</span></div><div class="line"><span class="comment">#博客地址,与申请的GitHub一致</span></div><div class="line"><span class="attr">url:</span> http://elfwalk.github.io</div><div class="line"><span class="attr">root:</span> /</div><div class="line"><span class="comment">#博客链接格式</span></div><div class="line"><span class="attr">permalink:</span> :year/:month/:day/:title/</div><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"><span class="attr">source_dir:</span> source</div><div class="line"><span class="attr">public_dir:</span> public</div><div class="line"><span class="attr">tag_dir:</span> tags</div><div class="line"><span class="attr">archive_dir:</span> archives</div><div class="line"><span class="attr">category_dir:</span> categories</div><div class="line"><span class="attr">code_dir:</span> downloads/code</div><div class="line"><span class="attr">i18n_dir:</span> :lang</div><div class="line"><span class="attr">skip_render:</span></div><div class="line"><span class="attr">new_post_name:</span> :title.md <span class="comment"># File name of new posts</span></div><div class="line"><span class="attr">default_layout:</span> post</div><div class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></div><div class="line"><span class="attr">external_link:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></div><div class="line"><span class="attr">filename_case:</span> <span class="number">0</span></div><div class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span></div><div class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span></div><div class="line"><span class="attr">relative_link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">future:</span> <span class="literal">true</span></div><div class="line"><span class="attr">highlight:</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  tab_replace:</span></div><div class="line"><span class="attr">default_category:</span> uncategorized</div><div class="line"><span class="attr">category_map:</span></div><div class="line"><span class="attr">tag_map:</span></div><div class="line"><span class="comment">#日期格式</span></div><div class="line"><span class="attr">date_format:</span> YYYY-MM-DD</div><div class="line"><span class="attr">time_format:</span> HH:mm:ss</div><div class="line"><span class="comment">#分页，每页文章数量</span></div><div class="line"><span class="attr">per_page:</span> <span class="number">10</span></div><div class="line"><span class="attr">pagination_dir:</span> page</div><div class="line"><span class="comment">#博客主题</span></div><div class="line"><span class="attr">theme:</span> landscape</div><div class="line"><span class="comment">#发布设置</span></div><div class="line"><span class="attr">deploy:</span> </div><div class="line"><span class="attr">  type:</span> git</div><div class="line">  <span class="comment">#Daymale改为你的github用户名</span></div><div class="line"><span class="attr">  repository:</span> https://github.com/Daymale/daymale.github.io.git</div><div class="line"><span class="attr">  branch:</span> master</div></pre></td></tr></table></figure>
+<ul>
+<li><p>写一篇文章</p>
+<p>  输入创建文章命令，生成一个md文件(/blog/source/_posts)</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="string">"hello"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701031.png" alt="image"></p>
+<ul>
+<li>用编辑器打开hello.md文件，编写完后保存<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> hello</div><div class="line"><span class="attr">date:</span> <span class="number">2015</span><span class="bullet">-07</span><span class="bullet">-01</span> <span class="number">22</span>:<span class="number">37</span>:<span class="number">23</span></div><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="bullet">  -</span> 日志</div><div class="line"><span class="bullet">  -</span> 二级目录</div><div class="line"><span class="attr">tags:</span></div><div class="line"><span class="bullet">  -</span> hello</div><div class="line"><span class="meta">---</span></div><div class="line">摘要:</div><div class="line">&lt;!--more--<span class="string">&gt;</span></div><div class="line">正文:</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3><h4 id="配置SSH-keys"><a href="#配置SSH-keys" class="headerlink" title="配置SSH keys"></a>配置SSH keys</h4><p>我们如何让本地git项目与远程的GitHub建立联系呢？用SSH keys</p>
+<ul>
+<li>生成新的SSH key：<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></div><div class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</div><div class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;直接回车&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>注意1：此处的邮箱地址，你可以输入自己的邮箱地址</p>
+<p>注意2：此处的-C是大写的C</p>
+<p>然后系统会要求你输入密码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="xml"><span class="tag">&lt;<span class="name">输入加密串</span>&gt;</span></span></div><div class="line">Enter same passphrase again:<span class="tag">&lt;<span class="name">再次输入加密串</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目是使用，如果为空的话提交项目则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
+<p>注意：输入密码的时候是没有 * 字样的，你直接输入就可以了。</p>
+<p>最后看到这样的界面，就成功设置SSHkey了：</p>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20160127/hexo20160127001.png" alt="image"></p>
+<ul>
+<li><p>添加SSH key到GitHub</p>
+<p>  在本机设置SSH key之后，需要添加到GitHub上，以完成SSH链接的设置。</p>
+<p>  1、打开本地C:\Users\Administrator\ .ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</p>
+<p>  2、登陆github系统。点击右上角的 Account Settings—&gt;SSH Public keys —&gt; add another public keys</p>
+<p>  3、把你本地生成的密钥复制到里面（key文本框中）， 点击 add key 就ok了</p>
+<h4 id="设置git身份信息"><a href="#设置git身份信息" class="headerlink" title="设置git身份信息"></a>设置git身份信息</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user<span class="selector-class">.name</span> <span class="string">"你的用户名"</span></div><div class="line">$ git config --global user<span class="selector-class">.email</span> <span class="string">"你的邮箱"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701032.png" alt="image"></p>
+<ul>
+<li>安装hexo git插件<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cnpm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701033.png" alt="image"></p>
+<ul>
+<li>发布更新博客<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>hexo d -g</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>发布时需要输入github的帐号和密码，输入密码时是看不到自己输入的内容的<br><img src="http://7xjzgy.com1.z0.glb.clouddn.com/image/20150701/hexo20150701034.png" alt="image"></p>
+<p>发布成功后，访问Daymale.github.io看下成果</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://daymale.github.io/2017/02/11/搭建个人博客/" data-id="ciz24n1ke0001kcqt7hjdlyak" class="article-share-link">分享到</a><div class="tags"><a href="/tags/博客/">博客</a></div><div class="post-nav"><a href="/2017/02/11/hexo教程/" class="next">hexo教程</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://daymale.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/博客/" style="font-size: 15px;">博客</a> <a href="/tags/记录/" style="font-size: 15px;">记录</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/搭建个人博客/">搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/11/hexo教程/">hexo教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/第一天/">第一天</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.haomwei.com/" title="屠城" target="_blank">屠城</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Daymale的小窝.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
