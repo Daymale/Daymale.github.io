@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>第一天 | Daymale的小窝</title>
+    <title>Git常用命令 | Daymale的小窝</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Daymale">
     
 
     
-    <meta name="description" content="随便写写
-晓看天色暮看云行也思卿坐也思卿">
+    <meta name="description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
+上面是文章摘要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一天">
-<meta property="og:url" content="http://daymale.github.io/2017/02/10/第一天/index.html">
+<meta property="og:title" content="Git常用命令">
+<meta property="og:url" content="http://daymale.github.io/2017/02/14/Git常用命令/index.html">
 <meta property="og:site_name" content="Daymale的小窝">
-<meta property="og:description" content="随便写写
-晓看天色暮看云行也思卿坐也思卿">
-<meta property="og:updated_time" content="2017-02-12T16:21:11.376Z">
+<meta property="og:description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
+上面是文章摘要">
+<meta property="og:updated_time" content="2017-02-14T11:17:23.821Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一天">
-<meta name="twitter:description" content="随便写写
-晓看天色暮看云行也思卿坐也思卿">
+<meta name="twitter:title" content="Git常用命令">
+<meta name="twitter:description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
+上面是文章摘要">
 
     
     <link rel="alternative" href="/atom.xml" title="Daymale的小窝" type="application/atom+xml">
@@ -83,14 +83,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/02/10/第一天/" title="第一天" itemprop="url">第一天</a>
+      <a href="/2017/02/14/Git常用命令/" title="Git常用命令" itemprop="url">Git常用命令</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Daymale" target="_blank" itemprop="author">Daymale</a>
 		
   <p class="article-time">
-    <time datetime="2017-02-10T03:38:48.000Z" itemprop="datePublished"> 发表于 2017-02-10</time>
+    <time datetime="2017-02-14T11:06:24.000Z" itemprop="datePublished"> 发表于 2017-02-14</time>
     
   </p>
 </header>
@@ -99,20 +99,32 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#晓看天色暮看云"><span class="toc-number">1.</span> <span class="toc-text">晓看天色暮看云</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#行也思卿"><span class="toc-number">1.1.</span> <span class="toc-text">行也思卿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#坐也思卿"><span class="toc-number">1.1.1.</span> <span class="toc-text">坐也思卿</span></a></li></ol></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#删除单个文件"><span class="toc-number">1.</span> <span class="toc-text">删除单个文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文件夹"><span class="toc-number">2.</span> <span class="toc-text">删除文件夹</span></a></li></ol>
 		
 		</div>
 		
-		<p>随便写写</p>
-<h1 id="晓看天色暮看云"><a href="#晓看天色暮看云" class="headerlink" title="晓看天色暮看云"></a>晓看天色暮看云</h1><h2 id="行也思卿"><a href="#行也思卿" class="headerlink" title="行也思卿"></a>行也思卿</h2><h3 id="坐也思卿"><a href="#坐也思卿" class="headerlink" title="坐也思卿"></a>坐也思卿</h3>  
+		<h3 id="删除单个文件"><a href="#删除单个文件" class="headerlink" title="删除单个文件"></a>删除单个文件</h3><p>一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>rm README.txt</div></pre></td></tr></table></figure></p>
+<p>上面是文章摘要<a id="more"></a></p>
+<p>这个时候,工作区是删除了,可版本库还没有。git status命令会立刻告诉你哪些文件被删除了</p>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ git status  </div><div class="line"><span class="keyword">On</span> branch master  </div><div class="line">Your branch <span class="keyword">is</span> up-<span class="keyword">to</span>-date <span class="keyword">with</span> <span class="symbol">'origin</span>/master'.  </div><div class="line">  </div><div class="line">Changes <span class="keyword">not</span> staged <span class="keyword">for</span> commit:  </div><div class="line">  (<span class="keyword">use</span> <span class="string">"git add/rm &lt;file&gt;..."</span> <span class="keyword">to</span> update what will be committed)  </div><div class="line">  (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working directory)  </div><div class="line">  </div><div class="line">        deleted:    README.txt  </div><div class="line">  </div><div class="line">no changes added <span class="keyword">to</span> commit (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</div></pre></td></tr></table></figure>
+<p>现在有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且commit，并且push<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ git rm README.txt  </div><div class="line">rm 'README.txt'  </div><div class="line">$ git <span class="keyword">commit</span> -m <span class="string">"remove README.txt"</span>  </div><div class="line">[<span class="keyword">master</span> d17efd8] remove README.txt  </div><div class="line"> <span class="number">1</span> <span class="keyword">file</span> <span class="keyword">changed</span>, <span class="number">1</span> deletion(-)  </div><div class="line"> <span class="keyword">delete</span> <span class="keyword">mode</span> <span class="number">100644</span> README.txt  </div><div class="line">  </div><div class="line">$ git push -u origin <span class="keyword">master</span>  </div><div class="line">Counting objects: <span class="number">3</span>, done.  </div><div class="line">Delta compression <span class="keyword">using</span> up <span class="keyword">to</span> <span class="number">4</span> threads.  </div><div class="line">Compressing objects: <span class="number">100</span>% (<span class="number">2</span>/<span class="number">2</span>), done.  </div><div class="line">Writing objects: <span class="number">100</span>% (<span class="number">2</span>/<span class="number">2</span>), <span class="number">210</span> <span class="keyword">bytes</span> | <span class="number">0</span> <span class="keyword">bytes</span>/s, done.  </div><div class="line">Total <span class="number">2</span> (delta <span class="number">1</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)  </div><div class="line"><span class="keyword">To</span> git@github.com:itmyhome2013/mygithub.git  </div><div class="line">   <span class="number">3</span>c147ee..c01c174  <span class="keyword">master</span> -&gt; <span class="keyword">master</span>  </div><div class="line">Branch <span class="keyword">master</span> <span class="keyword">set</span> up <span class="keyword">to</span> track remote branch <span class="keyword">master</span> <span class="keyword">from</span> origin.</div></pre></td></tr></table></figure></p>
+<p>另一种情况是删除了，因为版本库里还有呢，所以可以把误删的文件恢复到最新版本<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git checkout <span class="comment">-- README.txt</span></div></pre></td></tr></table></figure></p>
+<h3 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h3><p>可先直接在文件管理器中把要删除的文件夹删掉(以WEB-INF文件夹为例)<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">$</span> git add --<span class="keyword">all</span>  </div><div class="line"><span class="symbol">$</span> git commit -m <span class="string">"remove WEB-INF"</span>  </div><div class="line"><span class="symbol">$</span> git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>Git add -A(–all):表示把所有tracked文件中被修改过或已删除文件和所有untracted的文件信息添加到索引库</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Git/">Git</a>
+</div>
+
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/随想/">随想</a>
+  <span></span> <a href="/tags/Git/">Git</a>
   </div>
 
 </div>
@@ -121,7 +133,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://daymale.github.io/2017/02/10/第一天/" data-title="第一天 | Daymale的小窝" data-tsina="null" class="share clearfix">
+	  <div data-url="http://daymale.github.io/2017/02/14/Git常用命令/" data-title="Git常用命令 | Daymale的小窝" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -134,14 +146,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/02/11/搭建个人博客/" title="搭建个人博客">
-  <strong>上一篇：</strong><br/>
-  <span>
-  搭建个人博客</span>
+
+<div class="next">
+<a href="/2017/02/14/CSSvertical-align属性/"  title="CSSvertical-align属性">
+ <strong>下一篇：</strong><br/> 
+ <span>CSSvertical-align属性
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -153,7 +165,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#晓看天色暮看云"><span class="toc-number">1.</span> <span class="toc-text">晓看天色暮看云</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#行也思卿"><span class="toc-number">1.1.</span> <span class="toc-text">行也思卿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#坐也思卿"><span class="toc-number">1.1.1.</span> <span class="toc-text">坐也思卿</span></a></li></ol></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#删除单个文件"><span class="toc-number">1.</span> <span class="toc-text">删除单个文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文件夹"><span class="toc-number">2.</span> <span class="toc-text">删除文件夹</span></a></li></ol>
  
   </div>
 
