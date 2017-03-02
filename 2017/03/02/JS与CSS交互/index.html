@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Daymale</title>
+    <title>JS与CSS交互 | Daymale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Daymale">
     
 
     
-    <meta name="description" content="记录生活点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Daymale">
-<meta property="og:url" content="http://daymale.github.io/index.html">
+    <meta name="description" content="使用style属性制作菜单
+鼠标移到菜单上时改变菜单样式
+移出恢复为原来的样式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;    &amp;lt;head&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS与CSS交互">
+<meta property="og:url" content="http://daymale.github.io/2017/03/02/JS与CSS交互/index.html">
 <meta property="og:site_name" content="Daymale">
-<meta property="og:description" content="记录生活点滴">
+<meta property="og:description" content="使用style属性制作菜单
+鼠标移到菜单上时改变菜单样式
+移出恢复为原来的样式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;    &amp;lt;head&amp;">
+<meta property="og:updated_time" content="2017-03-02T04:06:04.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Daymale">
-<meta name="twitter:description" content="记录生活点滴">
+<meta name="twitter:title" content="JS与CSS交互">
+<meta name="twitter:description" content="使用style属性制作菜单
+鼠标移到菜单上时改变菜单样式
+移出恢复为原来的样式1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;    &amp;lt;head&amp;">
 <meta name="twitter:creator" content="@daymale37">
 <link rel="publisher" href="u/0/110125020772160168360">
 
@@ -227,12 +234,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2017/03/02/JS与CSS交互/" title="JS与CSS交互" itemprop="url">JS与CSS交互</a>
@@ -246,20 +251,22 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h3 id="使用style属性制作菜单"><a href="#使用style属性制作菜单" class="headerlink" title="使用style属性制作菜单"></a>使用style属性制作菜单</h3><ul>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用style属性制作菜单"><span class="toc-number">1.</span> <span class="toc-text">使用style属性制作菜单</span></a></li></ol>
+		
+		</div>
+		
+		<h3 id="使用style属性制作菜单"><a href="#使用style属性制作菜单" class="headerlink" title="使用style属性制作菜单"></a>使用style属性制作菜单</h3><ul>
 <li>鼠标移到菜单上时改变菜单样式</li>
 <li>移出恢复为原来的样式<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>使用style属性制作菜单<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">		<span class="selector-tag">ul</span> <span class="selector-tag">li</span> &#123;</div><div class="line">			<span class="attribute">width</span>: <span class="number">100px</span>;</div><div class="line">			<span class="attribute">height</span>: <span class="number">30px</span>;</div><div class="line">			<span class="attribute">float</span>: left;</div><div class="line">			<span class="attribute">list-style</span>: none;</div><div class="line">			<span class="attribute">margin</span>: <span class="number">0</span> <span class="number">2px</span>;</div><div class="line">			<span class="attribute">background</span>: <span class="number">#666</span>;</div><div class="line">			<span class="attribute">color</span>: white;</div><div class="line">			<span class="attribute">text-align</span>: center;</div><div class="line">			<span class="attribute">line-height</span>: <span class="number">30px</span>;</div><div class="line">			<span class="attribute">border-radius</span>: <span class="number">5px</span>;</div><div class="line">		&#125;</div><div class="line">	<span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>资讯动态<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>产品世界<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">			<span class="tag">&lt;<span class="name">li</span>&gt;</span>市场营销<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line">			<span class="keyword">var</span> li1 = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>)[<span class="number">0</span>];</div><div class="line">			<span class="keyword">var</span> li2 = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>)[<span class="number">1</span>];</div><div class="line">			<span class="keyword">var</span> li3 = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>)[<span class="number">2</span>];</div><div class="line">			li1.onmousemove = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li1.style.background = <span class="string">'red'</span>;</div><div class="line">			&#125;</div><div class="line">			li1.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li1.style.background = <span class="string">'#666'</span>;</div><div class="line">			&#125;</div><div class="line">			li2.onmousemove = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li2.style.background = <span class="string">'red'</span>;</div><div class="line">			&#125;</div><div class="line">			li2.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li2.style.background = <span class="string">'#666'</span>;</div><div class="line">			&#125;</div><div class="line">			li3.onmousemove = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li3.style.background = <span class="string">'red'</span>;</div><div class="line">			&#125;</div><div class="line">			li3.onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				li3.style.background = <span class="string">'#666'</span>;</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">			<span class="comment">//以上代码的改进版</span></div><div class="line">			<span class="keyword">var</span> len = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"li"</span>);</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; len.length; i++) &#123;</div><div class="line">				len[i].onmouseover = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">					<span class="keyword">this</span>.style.background = <span class="string">"red"</span>;</div><div class="line">				&#125;</div><div class="line">				len[i].onmouseout = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">					<span class="keyword">this</span>.style.background = <span class="string">"#666"</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		<span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></li>
 </ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -277,497 +284,47 @@
 
 
 
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://daymale.github.io/2017/03/02/JS与CSS交互/" data-title="JS与CSS交互 | Daymale" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
 
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/03/02/JS与CSS交互/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/03/02/JS与CSS交互/" data-count-type="comments">&nbsp;</a>
-	
-</div>
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/03/01/label标签for属性/" title="label标签for属性" itemprop="url">label标签for属性</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-03-01T13:25:44.000Z" itemprop="datePublished"> 发表于 2017-03-01</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="lt-label-gt-标签的for属性"><a href="#lt-label-gt-标签的for属性" class="headerlink" title="&lt; label &gt; 标签的for属性"></a>&lt; label &gt; 标签的for属性</h3><p>定义：for属性规定label与哪个表单元素绑定，点击文字后光标会出现在文本框中</p>
-<p>显式和隐式的联系</p>
-<ul>
-<li><p>显式的联系</p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="keyword">label</span> <span class="keyword">for</span>=<span class="string">"name"</span>&gt;用户名：&lt;/<span class="keyword">label</span>&gt;</div><div class="line">&lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> id=<span class="string">"name"</span> /&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>隐示的联系</p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="keyword">label</span>&gt;密码：&lt;<span class="keyword">input</span> <span class="keyword">type</span>=<span class="string">"text"</span> name=<span class="string">"userpwd"</span> /&gt;&lt;/<span class="keyword">label</span>&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/HTML/">HTML</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/HTML/">HTML</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/2017/03/01/label标签for属性/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/03/01/label标签for属性/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/03/01/label标签for属性/"  title="label标签for属性">
+ <strong>下一篇：</strong><br/> 
+ <span>label标签for属性
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2017/03/02/JS与CSS交互/" data-title="JS与CSS交互" data-url="http://daymale.github.io/2017/03/02/JS与CSS交互/"></div>
+</section>
 
-</footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/22/CSStransform属性/" title="CSStransform属性" itemprop="url">CSStransform属性</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-22T03:17:59.000Z" itemprop="datePublished"> 发表于 2017-02-22</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h3><p>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。<br>2D(x,y)3D(x,y,z)<br>X轴向右，Y轴向前，Z轴向上<br>上面是文章摘要
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2017/02/22/CSStransform属性/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/CSS/">CSS</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/CSS/">CSS</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/22/CSStransform属性/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/22/CSStransform属性/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/14/Git常用命令/" title="Git常用命令" itemprop="url">Git常用命令</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-14T11:06:24.000Z" itemprop="datePublished"> 发表于 2017-02-14</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="删除单个文件"><a href="#删除单个文件" class="headerlink" title="删除单个文件"></a>删除单个文件</h3><p>一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>rm README.txt</div></pre></td></tr></table></figure></p>
-<p>上面是文章摘要
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2017/02/14/Git常用命令/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Git/">Git</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Git/">Git</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/14/Git常用命令/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/14/Git常用命令/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/14/CSSvertical-align属性/" title="CSSvertical-align属性" itemprop="url">CSSvertical-align属性</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-14T08:03:38.000Z" itemprop="datePublished"> 发表于 2017-02-14</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h3><p>设置元素的垂直对齐方式</p>
-<ul>
-<li><p>默认值baseline：元素放置在父元素的基线上<br>上面是文章摘要
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2017/02/14/CSSvertical-align属性/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/CSS/">CSS</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/CSS/">CSS</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/14/CSSvertical-align属性/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/14/CSSvertical-align属性/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/12/Hexo教程/" title="Hexo博客教程" itemprop="url">Hexo博客教程</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-12T04:00:00.000Z" itemprop="datePublished"> 发表于 2017-02-12</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="hexo新建一篇文章给它添加分类和标签"><a href="#hexo新建一篇文章给它添加分类和标签" class="headerlink" title="hexo新建一篇文章给它添加分类和标签"></a>hexo新建一篇文章给它添加分类和标签</h3><ul>
-<li>输入命令<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="string">"hexo教程"</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>以上是文章摘要
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2017/02/12/Hexo教程/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/12/Hexo教程/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/12/Hexo教程/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/11/搭建个人博客/" title="搭建个人博客" itemprop="url">搭建个人博客</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-11T08:00:00.000Z" itemprop="datePublished"> 发表于 2017-02-11</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="免费搭建个人博客-hexo-github"><a href="#免费搭建个人博客-hexo-github" class="headerlink" title="免费搭建个人博客-hexo+github"></a>免费搭建个人博客-hexo+github</h2><p>使用hexo生成静态博客并架设在免费的github page平台</p>
-<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>系统</p>
-<ul>
-<li>window 10 64位</li>
-</ul>
-<p>使用软件 </p>
-<ul>
-<li>Git v2.11.164位 下载地址：<a href="http://pan.baidu.com/disk/home#list/vmode=list&amp;path=/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/Git">百度云</a></li>
-<li>Node.js v6.9.5 64位 下载地址：<a href="http://pan.baidu.com/disk/home#list/vmode=list&amp;path=/%E6%88%91%E7%9A%84%E8%B5%84%E6%BA%90/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/Node.js">百度云</a></li>
-</ul>
-<p>以上是文章摘要
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2017/02/11/搭建个人博客/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/博客/">博客</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/11/搭建个人博客/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/11/搭建个人博客/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2017/02/10/风暴/" title="风暴" itemprop="url">风暴</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://plus.google.com/u/0/110125020772160168360?rel=author" title="Daymale" target="_blank" itemprop="author">Daymale</a>
-		
-  <p class="article-time">
-    <time datetime="2017-02-10T03:38:48.000Z" itemprop="datePublished"> 发表于 2017-02-10</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><strong>真正的勇士</strong></p>
-<p><strong>敢于直面惨淡的人生</strong></p>
-<p><strong>敢于正视淋漓的鲜血</strong></p>
-<p><strong>这是怎样的哀痛者和幸福者</strong></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/随想/">随想</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2017/02/10/风暴/#comments" class="ds-thread-count comments-count-link" data-thread-key="2017/02/10/风暴/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用style属性制作菜单"><span class="toc-number">1.</span> <span class="toc-text">使用style属性制作菜单</span></a></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -935,14 +492,103 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
 
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"daymale"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 
@@ -1011,4 +657,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
