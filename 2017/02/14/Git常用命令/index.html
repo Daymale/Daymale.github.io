@@ -12,18 +12,18 @@
 
     
     <meta name="description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
-上面是文章摘要">
+以上是文章摘要">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git常用命令">
 <meta property="og:url" content="http://daymale.github.io/2017/02/14/Git常用命令/index.html">
 <meta property="og:site_name" content="Daymale">
 <meta property="og:description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
-上面是文章摘要">
-<meta property="og:updated_time" content="2017-02-14T11:17:23.821Z">
+以上是文章摘要">
+<meta property="og:updated_time" content="2017-03-02T04:09:43.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用命令">
 <meta name="twitter:description" content="删除单个文件一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了1$ rm README.txt
-上面是文章摘要">
+以上是文章摘要">
 <meta name="twitter:creator" content="@daymale37">
 <link rel="publisher" href="u/0/110125020772160168360">
 
@@ -258,7 +258,7 @@
 		</div>
 		
 		<h3 id="删除单个文件"><a href="#删除单个文件" class="headerlink" title="删除单个文件"></a>删除单个文件</h3><p>一般情况下，通常可直接在文件管理器中直接把文件删了，或用rm命令删了<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>rm README.txt</div></pre></td></tr></table></figure></p>
-<p>上面是文章摘要<a id="more"></a></p>
+<p>以上是文章摘要<a id="more"></a></p>
 <p>这个时候,工作区是删除了,可版本库还没有。git status命令会立刻告诉你哪些文件被删除了</p>
 <figure class="highlight vhdl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ git status  </div><div class="line"><span class="keyword">On</span> branch master  </div><div class="line">Your branch <span class="keyword">is</span> up-<span class="keyword">to</span>-date <span class="keyword">with</span> <span class="symbol">'origin</span>/master'.  </div><div class="line">  </div><div class="line">Changes <span class="keyword">not</span> staged <span class="keyword">for</span> commit:  </div><div class="line">  (<span class="keyword">use</span> <span class="string">"git add/rm &lt;file&gt;..."</span> <span class="keyword">to</span> update what will be committed)  </div><div class="line">  (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working directory)  </div><div class="line">  </div><div class="line">        deleted:    README.txt  </div><div class="line">  </div><div class="line">no changes added <span class="keyword">to</span> commit (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</div></pre></td></tr></table></figure>
 <p>现在有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且commit，并且push<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">$ git rm README.txt  </div><div class="line">rm 'README.txt'  </div><div class="line">$ git <span class="keyword">commit</span> -m <span class="string">"remove README.txt"</span>  </div><div class="line">[<span class="keyword">master</span> d17efd8] remove README.txt  </div><div class="line"> <span class="number">1</span> <span class="keyword">file</span> <span class="keyword">changed</span>, <span class="number">1</span> deletion(-)  </div><div class="line"> <span class="keyword">delete</span> <span class="keyword">mode</span> <span class="number">100644</span> README.txt  </div><div class="line">  </div><div class="line">$ git push -u origin <span class="keyword">master</span>  </div><div class="line">Counting objects: <span class="number">3</span>, done.  </div><div class="line">Delta compression <span class="keyword">using</span> up <span class="keyword">to</span> <span class="number">4</span> threads.  </div><div class="line">Compressing objects: <span class="number">100</span>% (<span class="number">2</span>/<span class="number">2</span>), done.  </div><div class="line">Writing objects: <span class="number">100</span>% (<span class="number">2</span>/<span class="number">2</span>), <span class="number">210</span> <span class="keyword">bytes</span> | <span class="number">0</span> <span class="keyword">bytes</span>/s, done.  </div><div class="line">Total <span class="number">2</span> (delta <span class="number">1</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)  </div><div class="line"><span class="keyword">To</span> git@github.com:itmyhome2013/mygithub.git  </div><div class="line">   <span class="number">3</span>c147ee..c01c174  <span class="keyword">master</span> -&gt; <span class="keyword">master</span>  </div><div class="line">Branch <span class="keyword">master</span> <span class="keyword">set</span> up <span class="keyword">to</span> track remote branch <span class="keyword">master</span> <span class="keyword">from</span> origin.</div></pre></td></tr></table></figure></p>
@@ -301,10 +301,10 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2017/02/22/CSStransform属性/" title="CSStransform属性">
+ <a href="/2017/02/22/CSS3transform属性/" title="CSS3transform属性">
   <strong>上一篇：</strong><br/>
   <span>
-  CSStransform属性</span>
+  CSS3transform属性</span>
 </a>
 </div>
 
@@ -355,7 +355,7 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/CSS/" title="CSS">CSS<sup>2</sup></a></li>
+			<li><a href="/categories/CSS/" title="CSS">CSS<sup>3</sup></a></li>
 		  
 		
 		  
